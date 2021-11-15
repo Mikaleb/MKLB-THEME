@@ -4,6 +4,7 @@ const tailpress = require("@jeffreyvr/tailwindcss-tailpress");
 
 module.exports = {
     mode: 'jit',
+    darkMode: 'class',
     purge: {
         content: [
             './*/*.php',
@@ -31,6 +32,11 @@ module.exports = {
             'xl': tailpress.theme('settings.layout.wideSize', theme)
         }
     },
+    variants: {
+        extend: {
+          display: ['dark']
+        },
+      },
     plugins: [
         tailpress.tailwind
     ]

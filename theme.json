@@ -17,6 +17,16 @@
           "color": "#14B8A6"
         },
         {
+          "name": "amberlight",
+          "slug": "amberlight",
+          "color": "#FFF9EA"
+        },
+        {
+          "name": "amberdark",
+          "slug": "amberdark",
+          "color": "#1e1706"
+        },
+        {
           "name": "Dark",
           "slug": "dark",
           "color": "#1F2937"

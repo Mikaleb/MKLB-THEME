@@ -9,7 +9,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class( 'bg-white text-gray-900 antialiased' ); ?>>
+<body <?php body_class( 'bg-amberlight dark:bg-amberdark text-gray-900 antialiased' ); ?>>
 
 <?php do_action( 'tailpress_site_before' ); ?>
 
@@ -26,14 +26,15 @@
 						<?php if ( has_custom_logo() ) { ?>
                             <?php the_custom_logo(); ?>
 						<?php } else { ?>
-							<div class="text-lg uppercase">
+							<div>
 								<a href="<?php echo get_bloginfo( 'url' ); ?>" class="text-lg font-extrabold uppercase">
-									<?php echo get_bloginfo( 'name' ); ?>
+									<img class="h-8 dark:hidden" src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" />
+									<img class="h-8 " src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" />
 								</a>
 							</div>
 
 							<p class="text-sm font-light text-gray-600">
-								<?php echo get_bloginfo( 'description' ); ?>
+								
 							</p>
 
 						<?php } ?>
@@ -75,7 +76,7 @@
 		<!-- Start introduction -->
 		<?php if ( is_front_page() ) : ?>
 			<div class="container pb-12 mx-auto my-12 border-b">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" />
+				
 			</div>
 		<?php endif; ?>
 		<!-- End introduction -->
